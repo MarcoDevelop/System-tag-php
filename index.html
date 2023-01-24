@@ -1,19 +1,3 @@
-<?php
-  // Dados de acesso ao banco de dados.   
-  define('HOST', 'sigmaplast.mysql.dbaas.com.br');
-  define('USUARIO', 'sigmaplast');
-  define('SENHA', 'Yabb11');
-  define('DB', 'sigmaplast');
-   
-  // Criando conexão com o banco de dados.
-  $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
-
-
-  $consulta = "SELECT * FROM `TABLE 1` WHERE `COL 2` LIKE 'AAJVGT-CS9'";
-  $con = mysqli_query($conexao, $consulta) or die("#Erro ao acessar registros!");
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,15 +37,7 @@
     <div class="div1">
       <label id="productClick" for="name">Producto / Product:</label>
       <br>
-      <strong id="product">
-        <?php
-          while($dado = $con -> fetch_array()){
-        ?>
-          <?php echo $dado ['COL 1']; ?>
-        <?php
-          }
-        ?>
-      </strong>
+      <strong id="product">Exemplo: Tech Metal 17 Micras</strong>
     </div>
 
     <div class="grid-container">

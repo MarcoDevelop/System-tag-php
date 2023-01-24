@@ -1,0 +1,458 @@
+@media print {
+
+  /*Escondendo objetos que não devem aparecer na impressão*/
+  video,
+  audio,
+  object,
+  button,
+  embed {
+    display: none;
+  }
+
+  .print {
+    display: block;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    font: 400 0.8rem Roboto, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .formContainer {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 2rem;
+  }
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div1 {
+    border: 1px solid black;
+    text-align-last: left;
+    padding-left: 3px;
+    padding-bottom: 0.8rem;
+    border-style: solid solid none solid;
+  }
+
+  .div1>strong {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .item1 {
+    grid-area: menu;
+    text-align: center;
+
+    border-left: 1px solid black !important;
+  }
+
+  .item2 {
+    grid-area: main;
+    text-align: left;
+    padding: 1px 0px 0.4rem 3px;
+    border-bottom: 1px solid black !important;
+  }
+
+  .item3 {
+    grid-area: footer;
+    text-align: left;
+    padding: 1px 0px 0.4rem 3px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'main main main main menu menu'
+      'footer footer footer footer menu menu';
+    background-color: black;
+    border: 1px solid black !important;
+  }
+
+  .grid-container>div {
+    background-color: white;
+  }
+
+  .div3 {
+    border: 1px solid black;
+    padding: 10px;
+    text-align-last: left;
+    padding-top: 1px;
+    padding-left: 3px;
+    border-style: none solid solid solid;
+  }
+
+  .div3>div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .grid-container2 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .externalSide {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid solid;
+    padding-bottom: 0.5rem;
+  }
+
+  .internalSide {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid none;
+    padding-bottom: 0.5rem;
+  }
+
+  .div4 {
+    border: 1px solid black;
+    padding-bottom: 3rem;
+    text-align-last: left;
+    padding-top: 3px;
+    padding-left: 3px;
+    border-style: none solid solid solid;
+  }
+
+  .div4>div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .dataCustomer {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .data {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid solid;
+    padding-bottom: 0.3rem;
+  }
+
+  .customer {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid none;
+    padding-bottom: 0.3rem;
+  }
+
+  .client {
+    border: 1px solid black;
+    padding: 3px;
+    text-align-last: left;
+    padding-top: 1px;
+    border-style: none solid solid solid;
+  }
+
+  .client>strong {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sap {
+    display: flex;
+    text-align: left;
+  }
+
+  .lotSap {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid solid;
+    padding-bottom: 0.3rem;
+  }
+
+  .lotSap>strong {
+    display: flex;
+    justify-content: center;
+  }
+
+  .opSap {
+    border: 1px solid black;
+    width: 100%;
+    border-style: none solid solid none;
+    padding-bottom: 0.3rem;
+  }
+
+  .opSap>strong {
+    display: flex;
+    justify-content: center;
+  }
+
+  .barCode {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 1px solid black;
+    border-style: none solid solid solid;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Style normal */
+
+body,
+input,
+textarea,
+button {
+  font: 400 0.7rem Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover{
+  opacity: 0.9;
+  transition: 0.4s;
+  color: #15803d;
+}
+
+button {
+  padding: 0.75rem 2.8rem;
+  color: #f9fafb;
+  font-weight: 700;
+  background: #22c55e;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  line-height: 1.3rem;
+  margin-top: 0.7rem;
+  margin-left: 0.7rem;
+  cursor: pointer;  
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+.formContainer {
+  max-width: 330px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-right: 1.8rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div1 {
+  border: 1px solid black;
+  text-align-last: left;
+  padding-left: 3px;
+  padding-bottom: 0.8rem;
+  border-style: solid solid none solid;
+}
+
+.div1>strong {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: menu;
+  text-align: center;
+
+  border-left: 1px solid black !important;
+}
+
+.item2 {
+  grid-area: main;
+  text-align: left;
+  padding: 1px 0px 0.2rem 3px;
+  border-bottom: 1px solid black !important;
+}
+
+.item3 {
+  grid-area: footer;
+  text-align: left;
+  padding: 1px 0px 0.2rem 3px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main menu menu'
+    'footer footer footer footer menu menu';
+  background-color: black;
+  border: 1px solid black !important;
+}
+
+.grid-container>div {
+  background-color: white;
+}
+
+.div3 {
+  border: 1px solid black;
+  padding-bottom: 0.3rem;
+  text-align-last: left;
+  padding-top: 1px;
+  padding-left: 3px;
+  border-style: none solid solid solid;
+}
+
+.div3>div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid-container2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.externalSide {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid solid;
+  padding-bottom: 0.5rem;
+}
+
+.internalSide {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid none;
+  padding-bottom: 0.5rem;
+}
+
+.div4 {
+  border: 1px solid black;
+  padding-bottom: 0.3rem;
+  text-align-last: left;
+  padding-top: 3px;
+  padding-left: 3px;
+  border-style: none solid solid solid;
+}
+
+.div4>div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dataCustomer {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.data {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid solid;
+  padding-bottom: 0.3rem;
+}
+
+.customer {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid none;
+  padding-bottom: 0.3rem;
+}
+
+.client {
+  border: 1px solid black;
+  padding: 3px;
+  text-align-last: left;
+  padding-top: 1px;
+  border-style: none solid solid solid;
+}
+
+.client>strong {
+  display: flex;
+  justify-content: center;
+}
+
+.sap {
+  display: flex;
+  text-align: left;
+}
+
+.lotSap {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid solid;
+  padding-bottom: 0.3rem;
+}
+
+.lotSap>strong {
+  display: flex;
+  justify-content: center;
+}
+
+.opSap {
+  border: 1px solid black;
+  width: 100%;
+  border-style: none solid solid none;
+  padding-bottom: 0.3rem;
+}
+
+.opSap>strong {
+  display: flex;
+  justify-content: center;
+}
+
+.barCode {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 1px solid black;
+  border-style: none solid solid solid;
+  display: flex;
+  justify-content: center;
+}
