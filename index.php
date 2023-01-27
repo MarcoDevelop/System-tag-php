@@ -5,8 +5,6 @@
   // Criando conexão com o banco de dados.
   $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
 
-  // $consulta = "SELECT * FROM `TABLE 1` WHERE `COL 2` LIKE 'AAJVGT-CS9'";
-
   $consulta = "SELECT * FROM `TABLE 1`";
   $con = mysqli_query($conexao, $consulta) or die("#Erro ao acessar registros!");
 ?>
