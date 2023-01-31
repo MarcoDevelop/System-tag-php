@@ -1,11 +1,11 @@
 <?php
   //Incluindo conexão com o banco de dados
-  include('./List/connection.php');
+  include('connection.php');
    
   // Criando conexão com o banco de dados.
   $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
 
-  $consulta = "SELECT * FROM `TABLE 1` WHERE `COL 15` = '0'";
+  $consulta = "SELECT * FROM `TABLE 1` WHERE `COL 15` = '1'";
   $con = mysqli_query($conexao, $consulta) or die("#Erro ao acessar registros!");
 ?>
 
@@ -67,11 +67,11 @@
     <h4>PACKING LIST SRF INDUSTRIES (THAILAND) LTD</h4>
 
     <div>
-      <button><a href="./List/done.php">Ir para lista de etiquetas já impressas</a></button>
+      <button><a href="../index.php">Voltar a lista de etiquetas não impressas</a></button>
     </div>
 
     <br>
-       
+
     <table class="table table-hover Light">
       <thead>
         <tr class="table-secondary">
@@ -113,7 +113,7 @@
               }
             ?>
 
-            <button><a href="./List/etiqueta.php?codigo=<?php echo $dado['COL 2'];?>">Gerar etiqueta</a></button>
+            <button><a href="etiqueta.php?codigo=<?php echo $dado['COL 2'];?>">Ver etiqueta</a></button>
           </td>
         </tr>
 

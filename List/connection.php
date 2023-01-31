@@ -1,9 +1,9 @@
 <?php
   // Dados de acesso ao banco de dados.   
   define('HOST', 'mysql.dbaas.com.br');
-  define('USUARIO', 'usuario');
-  define('SENHA', 'senha');
-  define('DB', 'chatbot');
+  define('USUARIO', '');
+  define('SENHA', '');
+  define('DB', '');
     
   // Criando conexão com o banco de dados.
   $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
